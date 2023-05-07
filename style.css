@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(206, 224, 240, 0.5);
+}
+
+.main_div{
+    height: 100vh;
+    width: 400px;
+    background-color: white;
+    position: relative;
+    transform: translateX(-400px);
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+}
+
+.top_heading{
+    font-size: 32px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.text_2{
+    padding-left: 4px;
+}
+
+.top_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.closebtn{
+    border: none;
+    background-color: white;
+}
+
+.closebtn i{
+    color: red;
+    font-size: 2rem;
+    font-weight: 700;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+.closebtn i:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.list{
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.list li{
+    font-size: 1.8rem;
+    padding: 1rem 1.2rem;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    
+}
+
+.list li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+.list li:hover{
+    background-color: rgba(91, 91, 228, 0.5);
+    cursor: pointer;
+}
+
+.list li:hover a{
+    padding-left: 10px;
+    color: white;
+}
+
+.social_links{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+
+.social_links li .fa-brands{
+    color: rgb(175, 175, 245);
+    font-size: 1.5rem;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+.social_links li .fa-brands:hover{
+    color: rgba(16, 16, 17, 0.8);
+}
+
+.navbar_toggler{
+    color: rgb(209, 179, 238);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.navbar_toggler i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 900ms;
+    transition-timing-function: ease;
+}
+
+.navbar_toggler:hover i{
+    transform: scale(0.8);  
+}
+
+.hidden{
+    transform: translateX(0);
+}
