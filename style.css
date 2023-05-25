@@ -132,3 +132,7 @@ body{
 .hidden{
     transform: translateX(0);
 }
+
+.display{
+    display: none;
+}
